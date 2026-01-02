@@ -1,18 +1,22 @@
-// Inferência de Tipo de Variável Local - var
+// Promoções Automáticas - Parte 2
 
-// var foi intruduzido no Java 10
-// Declarar uma variável local
-// Faz inferência de valor
+// byte, short e char são promovidos quando usados em uma expressão
 
 public class Aula40 {
     public static void main(String[] args) {
-        var numero = 10.5D; // inferência double
-        //float numero2 = numero; // irá retornar erro, pois float é menor do que double
-        double numero2 = numero;
+        byte a = 10;
+        int b = a + 5; // a é promovido para int antes do cálculo (caso a variável b seja declarada como byte, retornará erro)
+        System.out.println("Valor de a = " + a);
+        System.out.println("Valor de b = " + b);
 
-        System.out.println("Valor de numero = " + numero);
-        System.out.println("Valor de numero2 = " + numero2);
+        int c = 10;
+        float d = 1.5f;
+        float e = c * d; // c é promovido para float antes do cálculo
+        System.out.println("Valor de e = " + e);
 
-        // var usuario = new Usuario(); // inferência do tipo Usuario
+        int f = 20;
+        float g = 1.5f;
+        float h = f * g; // f é promovido para double antes do cálculo
+        System.out.println("Valor de h = " + h);
     }
 }
