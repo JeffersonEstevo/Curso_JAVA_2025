@@ -28,5 +28,11 @@ public class Aula56 {
 
         // Pós-decremnto itn e = a--; Agora, a é 5, mas e é 6 (porque o vlaor antigo de a foi usado)
         */
+
+        a = 10;
+        int b = a++;
+        System.out.println("valor de a = " + a);
+        System.out.println("valor de b = " + b);
+
     }
 }
