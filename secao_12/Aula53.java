@@ -3,7 +3,7 @@
 /* 
 OPERADORES DE COMPARAÇÃO
 
-Os operadores aritméticos são usados para comparar dois valores:
+Os operadores de comparação são usados para comparar dois valores:
     • Igual a (==)
     • Diferente de  (!=)
     • Maior que (>)
